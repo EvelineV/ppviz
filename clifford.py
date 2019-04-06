@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import datashader as ds
 from datashader import transfer_functions as tf
 from datashader.colors import inferno, viridis
