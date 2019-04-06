@@ -3,15 +3,14 @@ from math import pi, sqrt
 from matplotlib.path import Path
 import matplotlib.pyplot as plt
 
-plt.figure(figsize=(10,10))
-
 def pentagon(radius, orientation):
     return patches.RegularPolygon((0,0), numVertices=5, radius=radius, orientation=orientation, linestyle='-', fill=None)
 
 def get_pentagon_vertices(pentagon):
     return [(x[0], x[1]) for x in pentagon.get_verts()]
 
-_, ax = plt.subplots()
+fig = plt.figure(figsize=(10,10))
+ax = plt.gca()
 outer_radius = 10.0
 inner_radius = 2.0/(3.0+sqrt(5.0))*outer_radius + 2
 ax.set_aspect(1)
