@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+datashader-examples/
+*.png
+*.ipynb
+
